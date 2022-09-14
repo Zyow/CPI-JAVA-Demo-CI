@@ -1,0 +1,12 @@
+name: Hello World
+
+on: [push]
+
+jobs:
+  hello-world-console:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+      - name: Lancer la commande Hello World
+        run: echo hello world
